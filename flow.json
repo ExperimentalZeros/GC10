@@ -1,0 +1,1219 @@
+[
+    {
+        "id": "6716eebc96aa56aa",
+        "type": "tab",
+        "label": "CMD",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dccb79d78124d409",
+        "type": "tab",
+        "label": "UART",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "35aed2f02f81b42e",
+        "type": "tab",
+        "label": "INDICATORS",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "462808f26d12cada",
+        "type": "serial-port",
+        "name": "GC10",
+        "serialport": "/dev/ttyACM0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n\\r",
+        "responsetimeout": "2500"
+    },
+    {
+        "id": "7605bf83619c8d04",
+        "type": "ui_tab",
+        "name": "DATA",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a7d9bc960ec780c0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dd3325a5da46decb",
+        "type": "ui_group",
+        "name": "CONTROLS",
+        "tab": "7605bf83619c8d04",
+        "order": 1,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1722fb642b1a6c47",
+        "type": "ui_group",
+        "name": "INDICATORS",
+        "tab": "7605bf83619c8d04",
+        "order": 2,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ae901b2032870e2a",
+        "type": "ui_group",
+        "name": "METRICS",
+        "tab": "7605bf83619c8d04",
+        "order": 3,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "488976cbeb078bf0",
+        "type": "ui_spacer",
+        "z": "6716eebc96aa56aa",
+        "name": "spacer",
+        "group": "dd3325a5da46decb",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "d00bb572c90caa33",
+        "type": "ui_spacer",
+        "z": "6716eebc96aa56aa",
+        "name": "spacer",
+        "group": "1722fb642b1a6c47",
+        "order": 4,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2643c43a21f51e3a",
+        "type": "ui_spacer",
+        "z": "6716eebc96aa56aa",
+        "name": "spacer",
+        "group": "1722fb642b1a6c47",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "dfc6bb0ccf42cd8c",
+        "type": "ui_spacer",
+        "z": "6716eebc96aa56aa",
+        "name": "spacer",
+        "group": "1722fb642b1a6c47",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b8981f4ceb4d89d2",
+        "type": "ui_spacer",
+        "z": "6716eebc96aa56aa",
+        "name": "spacer",
+        "group": "ae901b2032870e2a",
+        "order": 3,
+        "width": "3",
+        "height": "3"
+    },
+    {
+        "id": "1aabab505422e39a",
+        "type": "ui_spacer",
+        "z": "35aed2f02f81b42e",
+        "name": "spacer",
+        "group": "ae901b2032870e2a",
+        "order": 6,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "2ea0590cf971bedc",
+        "type": "ui_spacer",
+        "z": "35aed2f02f81b42e",
+        "name": "spacer",
+        "group": "dd3325a5da46decb",
+        "order": 6,
+        "width": "3",
+        "height": "7"
+    },
+    {
+        "id": "24afcd1a81166d96",
+        "type": "comment",
+        "z": "6716eebc96aa56aa",
+        "name": "UART COMMANDS (RPI Pico)",
+        "info": "void SerCmdExec(void) {\n\tchar* ptr;\n\tchar buf[8];\n\n\tif (memcmp((char*)CmdBuf, \"stop\", 4) == 0) {\n\t\tsout = false;\n\t} else\n\tif (memcmp((char*)CmdBuf, \"go\", 2) == 0) {\n\t\tsout = true;\n\t} else\n\tif (memcmp((char*)CmdBuf, \"set \", 4) == 0) {\n\t\tptr = (char*)CmdBuf + 4;\n\t\tif (memcmp(ptr, \"gms=\", 4) == 0) {\n\t\t\tptr += 4;\n\t\t\tgamma_sensitivity = atoi(ptr);\n\t\t} else\n\t\tif (memcmp(ptr, \"atc=\", 4) == 0) {\n\t\t\tptr += 4;\n\t\t\talarm_trigger_cpm = atoi(ptr);\n\t\t} else\n\t\tif (memcmp(ptr, \"hvg=\", 4) == 0) {\n\t\t\tptr += 4;\n\t\t\thvg_pulsewidth = atoi(ptr);\n\t\t\tpwm_set_chan_level(hvgPwmSlice, PWM_CHAN_A, hvg_pulsewidth);\n\t\t} else\n\t\tif (memcmp(ptr, \"bps=\", 4) == 0) {\n\t\t\tuint32_t bps;\n\t\t\tptr += 4;\n\t\t\tbps = atol(ptr);\n\t\t\tuart_set_baudrate(uart1, bps);\n\t\t} else\n\t\tif (memcmp(ptr, \"cfg=\", 4) == 0) {\n\t\t\tptr += 4;\n\t\t\ttone = atoi(ptr);\n\t\t\tpwm_set_clkdiv(bzsPwmSlice, tone);\n\t\t} else\n\t\tif (memcmp(ptr, \"snd=\", 4) == 0) {\n\t\t\tptr += 4;\n\t\t\tif (memcmp(ptr, \"on\", 2) == 0) {\n\t\t\t\tis_sound_enabled = true;\n\t\t\t} else\n\t\t\tif (memcmp(ptr, \"off\", 3) == 0) {\n\t\t\t\tis_sound_enabled = false;\n\t\t\t}\n\t\t} else\n\t\tif (memcmp(ptr, \"dpd=\", 4) == 0) {\n\t\t\tptr += 4;\n\t\t\tif (memcmp(ptr, \"on\", 2) == 0) {\n\t\t\t\tssd1306_poweron(&disp);\n\t\t\t} else\n\t\t\tif (memcmp(ptr, \"off\", 3) == 0) {\n\t\t\t\tssd1306_poweroff(&disp);\n\t\t\t}\n\t\t}\n\t} else\n\tif (memcmp((char*)CmdBuf, \"save\", 4) == 0) {\n\t\teeprom_write_word(OFS_GMS, gamma_sensitivity);\n\t\teeprom_write_word(OFS_ALARM, alarm_trigger_cpm);\n\t\teeprom_write_word(OFS_PWM_WIDTH, hvg_pulsewidth);\n\t\teeprom_write_byte(OFS_SOUND, (is_sound_enabled == true)? 1 : 0);\n\t} else\n",
+        "x": 150,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "04881928c9790a10",
+        "type": "inject",
+        "z": "6716eebc96aa56aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CMD",
+        "payload": "go",
+        "payloadType": "str",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "23e806a54ef60867"
+            ]
+        ]
+    },
+    {
+        "id": "f486af1925f10ff5",
+        "type": "inject",
+        "z": "6716eebc96aa56aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CMD",
+        "payload": "stop",
+        "payloadType": "str",
+        "x": 400,
+        "y": 220,
+        "wires": [
+            [
+                "3e31fea09d95ebc6"
+            ]
+        ]
+    },
+    {
+        "id": "d74853dc82fced2a",
+        "type": "inject",
+        "z": "6716eebc96aa56aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "CMD",
+        "payload": "show",
+        "payloadType": "str",
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "4a6852d2f164f2ea"
+            ]
+        ]
+    },
+    {
+        "id": "4f7743288b9849ed",
+        "type": "link out",
+        "z": "6716eebc96aa56aa",
+        "name": "UART_CMD_INPUT",
+        "mode": "link",
+        "links": [
+            "c84413c6cec11c5c"
+        ],
+        "x": 725,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "23e806a54ef60867",
+        "type": "ui_button",
+        "z": "6716eebc96aa56aa",
+        "name": "",
+        "group": "dd3325a5da46decb",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "GO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "go",
+        "payloadType": "str",
+        "topic": "CMD",
+        "topicType": "str",
+        "x": 590,
+        "y": 180,
+        "wires": [
+            [
+                "4f7743288b9849ed"
+            ]
+        ]
+    },
+    {
+        "id": "3e31fea09d95ebc6",
+        "type": "ui_button",
+        "z": "6716eebc96aa56aa",
+        "name": "",
+        "group": "dd3325a5da46decb",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "STOP",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "stop",
+        "payloadType": "str",
+        "topic": "CMD",
+        "topicType": "str",
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "4f7743288b9849ed"
+            ]
+        ]
+    },
+    {
+        "id": "4a6852d2f164f2ea",
+        "type": "ui_button",
+        "z": "6716eebc96aa56aa",
+        "name": "",
+        "group": "dd3325a5da46decb",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "SHOW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "show",
+        "payloadType": "str",
+        "topic": "CMD",
+        "topicType": "str",
+        "x": 580,
+        "y": 260,
+        "wires": [
+            [
+                "4f7743288b9849ed"
+            ]
+        ]
+    },
+    {
+        "id": "1252aa117a765922",
+        "type": "comment",
+        "z": "6716eebc96aa56aa",
+        "name": "FW Ver. FWNX1R04",
+        "info": "https://github.com/netio-devices/gc10next/tree/main\nhttps://github.com/netio-devices/gc10next\nhttps://netiodev.com/GC10/manuals/GC10next_Sch.pdf",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ad04612a5fac150a",
+        "type": "serial in",
+        "z": "dccb79d78124d409",
+        "name": "OUTPUT",
+        "serial": "462808f26d12cada",
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "ea7f7b5db821975e"
+            ]
+        ]
+    },
+    {
+        "id": "ea5a3be5d39320f3",
+        "type": "serial out",
+        "z": "dccb79d78124d409",
+        "name": "INPUT",
+        "serial": "462808f26d12cada",
+        "x": 310,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "43662d83803d5831",
+        "type": "debug",
+        "z": "dccb79d78124d409",
+        "name": "OUTPUT",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fb12cd3514570e64",
+        "type": "serial control",
+        "z": "dccb79d78124d409",
+        "name": "",
+        "serial": "462808f26d12cada",
+        "x": 530,
+        "y": 480,
+        "wires": [
+            [
+                "aa408e5d6bf4be8f"
+            ]
+        ]
+    },
+    {
+        "id": "8400cf4601cd88b9",
+        "type": "inject",
+        "z": "dccb79d78124d409",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "133996020a2c9f35"
+            ]
+        ]
+    },
+    {
+        "id": "133996020a2c9f35",
+        "type": "function",
+        "z": "dccb79d78124d409",
+        "name": "SETTINGS",
+        "func": "let DEVICE = msg.payload || \"/dev/ttyACM0\"; \n\nmsg.payload = {\n    \"serialport\": DEVICE,\n    \"serialbaud\": 9600,\n    \"databits\": 8,\n    \"parity\": \"none\",\n    \"stopbits\": 1,\n    \"enabled\": true\n}\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 480,
+        "wires": [
+            [
+                "fb12cd3514570e64"
+            ]
+        ]
+    },
+    {
+        "id": "aa408e5d6bf4be8f",
+        "type": "debug",
+        "z": "dccb79d78124d409",
+        "name": "SETTINGS",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c84413c6cec11c5c",
+        "type": "link in",
+        "z": "dccb79d78124d409",
+        "name": "UART_INPUT",
+        "links": [
+            "4f7743288b9849ed"
+        ],
+        "x": 175,
+        "y": 120,
+        "wires": [
+            [
+                "ea5a3be5d39320f3"
+            ]
+        ]
+    },
+    {
+        "id": "ca3c91162a17b585",
+        "type": "link out",
+        "z": "dccb79d78124d409",
+        "name": "UART_OUT",
+        "mode": "link",
+        "links": [
+            "ca38671e3b7bed60",
+            "9eef7fdb2544c35c"
+        ],
+        "x": 665,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ea7f7b5db821975e",
+        "type": "function",
+        "z": "dccb79d78124d409",
+        "name": "CLEAN",
+        "func": "msg.payload = msg.payload.slice(0, -2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 180,
+        "wires": [
+            [
+                "43662d83803d5831",
+                "ca3c91162a17b585"
+            ]
+        ]
+    },
+    {
+        "id": "c7be08ccd69cc305",
+        "type": "ui_text_input",
+        "z": "dccb79d78124d409",
+        "name": "",
+        "label": "DEVICE",
+        "tooltip": "",
+        "group": "dd3325a5da46decb",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "DEVICE",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 160,
+        "y": 420,
+        "wires": [
+            [
+                "133996020a2c9f35"
+            ]
+        ]
+    },
+    {
+        "id": "f98a1016b1774e49",
+        "type": "inject",
+        "z": "dccb79d78124d409",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "DEVICE",
+        "payload": "/dev/ttyACM0",
+        "payloadType": "str",
+        "x": 200,
+        "y": 360,
+        "wires": [
+            [
+                "c7be08ccd69cc305"
+            ]
+        ]
+    },
+    {
+        "id": "9eef7fdb2544c35c",
+        "type": "link in",
+        "z": "35aed2f02f81b42e",
+        "name": "UART_OUT",
+        "links": [
+            "ca3c91162a17b585"
+        ],
+        "x": 405,
+        "y": 400,
+        "wires": [
+            [
+                "ae0786ea94d3f50e",
+                "e64d92cc75ae2f4f"
+            ]
+        ]
+    },
+    {
+        "id": "ae0786ea94d3f50e",
+        "type": "function",
+        "z": "35aed2f02f81b42e",
+        "name": "INDICATORS",
+        "func": "let VALUE = Number(msg.payload.replace(/\\D/g,''));\n\nswitch (true){\n    \n    case (/ttc/g.test(msg.payload)):\n        context.TTC = VALUE;\n        break;\n\n    case (/gms/g.test(msg.payload)):\n        context.GMS = VALUE;\n        break;\n\n    case (/atc/g.test(msg.payload)):\n        context.ATC = VALUE;\n        break;\n\n    case (/hvg/g.test(msg.payload)):\n        context.HVG = VALUE;\n        break;\n\n    default:\n        context.CPM = VALUE || context.CPM;\n        context.uSv = ((context.CPM / 544)).toFixed(4) || context.uSv;\n}\n\nmsg = [\n\n    {payload: context.CPM, topic: \"CPM\"},\n    {payload: context.uSv, topic: \"uSv\"},\n    \n    {payload: context.TTC, topic: \"TTC\"},\n    {payload: context.GMS, topic: \"GMS\"},\n    {payload: context.ATC, topic: \"ATC\"},\n    {payload: context.HVG, topic: \"HVG\"},\n    \n];\n\nreturn msg;",
+        "outputs": 6,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 360,
+        "wires": [
+            [
+                "1b2db19bb96aaf1a",
+                "cffedf3229ca6aaf",
+                "fad67dcbe2dc962d"
+            ],
+            [
+                "e6d6ec02a67ba2fe",
+                "7c0c195978cda218",
+                "efb6bdc55928ac3b"
+            ],
+            [
+                "3a0f8c6411294b7f"
+            ],
+            [
+                "465b074a654ca7b9"
+            ],
+            [
+                "b4c49d735433dd85"
+            ],
+            [
+                "03e96e2333bc46e5"
+            ]
+        ]
+    },
+    {
+        "id": "dc337cd8ab8e3c6b",
+        "type": "function",
+        "z": "35aed2f02f81b42e",
+        "name": "test function",
+        "func": "msg = [\n\n{payload: context.CPM, topic: \"CPM\"},\n{payload: context.uSv, topic: \"uSv\"},\n\n{payload: context.TCC, topic: \"TCC\"},\n{payload: context.GMS, topic: \"GMS\"},\n{payload: context.ATC, topic: \"ATC\"},\n{payload: context.HVG, topic: \"HVG\"},\n    \n];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17475f753fd157e0",
+        "type": "ui_button",
+        "z": "35aed2f02f81b42e",
+        "name": "",
+        "group": "1722fb642b1a6c47",
+        "order": 10,
+        "width": 20,
+        "height": 1,
+        "passthru": false,
+        "label": "* CLEAR *",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "[ ]",
+        "payloadType": "json",
+        "topic": "CLEAR",
+        "topicType": "str",
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "1b2db19bb96aaf1a",
+                "e6d6ec02a67ba2fe",
+                "3a0f8c6411294b7f",
+                "465b074a654ca7b9",
+                "b4c49d735433dd85",
+                "03e96e2333bc46e5",
+                "24b2b9ee679d1dab"
+            ]
+        ]
+    },
+    {
+        "id": "e6d6ec02a67ba2fe",
+        "type": "ui_chart",
+        "z": "35aed2f02f81b42e",
+        "name": "uSv",
+        "group": "1722fb642b1a6c47",
+        "order": 2,
+        "width": 20,
+        "height": 5,
+        "label": "uSv / Hr @ {{msg.payload}}",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 320,
+        "wires": [
+            [
+                "da77246536f663a1"
+            ]
+        ]
+    },
+    {
+        "id": "2c5e4b1fd6b8c5b7",
+        "type": "debug",
+        "z": "35aed2f02f81b42e",
+        "name": "CPM",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1b2db19bb96aaf1a",
+        "type": "ui_chart",
+        "z": "35aed2f02f81b42e",
+        "name": "CPM",
+        "group": "1722fb642b1a6c47",
+        "order": 1,
+        "width": 20,
+        "height": 5,
+        "label": "CPM @ {{msg.payload}}",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 280,
+        "wires": [
+            [
+                "2c5e4b1fd6b8c5b7"
+            ]
+        ]
+    },
+    {
+        "id": "e64d92cc75ae2f4f",
+        "type": "debug",
+        "z": "35aed2f02f81b42e",
+        "name": "UART Payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3a0f8c6411294b7f",
+        "type": "ui_text",
+        "z": "35aed2f02f81b42e",
+        "group": "1722fb642b1a6c47",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "TTC",
+        "label": "TTC",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "465b074a654ca7b9",
+        "type": "ui_text",
+        "z": "35aed2f02f81b42e",
+        "group": "1722fb642b1a6c47",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "GMS",
+        "label": "GMS",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b4c49d735433dd85",
+        "type": "ui_text",
+        "z": "35aed2f02f81b42e",
+        "group": "1722fb642b1a6c47",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "name": "ATC",
+        "label": "ATC",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "03e96e2333bc46e5",
+        "type": "ui_text",
+        "z": "35aed2f02f81b42e",
+        "group": "1722fb642b1a6c47",
+        "order": 9,
+        "width": 3,
+        "height": 1,
+        "name": "HVG",
+        "label": "HVG",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "da77246536f663a1",
+        "type": "debug",
+        "z": "35aed2f02f81b42e",
+        "name": "uSv",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "cffedf3229ca6aaf",
+        "type": "smooth",
+        "z": "35aed2f02f81b42e",
+        "name": "",
+        "property": "payload",
+        "action": "max",
+        "count": "100",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 840,
+        "y": 40,
+        "wires": [
+            [
+                "cd28e45eff66eda8"
+            ]
+        ]
+    },
+    {
+        "id": "cd28e45eff66eda8",
+        "type": "ui_button",
+        "z": "35aed2f02f81b42e",
+        "name": "CPM MAX",
+        "group": "ae901b2032870e2a",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "{{msg.topic}} MAX @ {{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1010,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fad67dcbe2dc962d",
+        "type": "smooth",
+        "z": "35aed2f02f81b42e",
+        "name": "",
+        "property": "payload",
+        "action": "min",
+        "count": "100",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 840,
+        "y": 80,
+        "wires": [
+            [
+                "45ca3dec61d0afb6"
+            ]
+        ]
+    },
+    {
+        "id": "45ca3dec61d0afb6",
+        "type": "ui_button",
+        "z": "35aed2f02f81b42e",
+        "name": "CPM MIN",
+        "group": "ae901b2032870e2a",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "{{msg.topic}} MIN @ {{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c0c195978cda218",
+        "type": "smooth",
+        "z": "35aed2f02f81b42e",
+        "name": "",
+        "property": "payload",
+        "action": "max",
+        "count": "100",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 840,
+        "y": 140,
+        "wires": [
+            [
+                "777c0bdf9fe86889"
+            ]
+        ]
+    },
+    {
+        "id": "efb6bdc55928ac3b",
+        "type": "smooth",
+        "z": "35aed2f02f81b42e",
+        "name": "",
+        "property": "payload",
+        "action": "min",
+        "count": "100",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 840,
+        "y": 180,
+        "wires": [
+            [
+                "fd2f51316d03a87c"
+            ]
+        ]
+    },
+    {
+        "id": "777c0bdf9fe86889",
+        "type": "ui_button",
+        "z": "35aed2f02f81b42e",
+        "name": "uSv MAX",
+        "group": "ae901b2032870e2a",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "{{msg.topic}} MAX @ {{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd2f51316d03a87c",
+        "type": "ui_button",
+        "z": "35aed2f02f81b42e",
+        "name": "uSv MIN",
+        "group": "ae901b2032870e2a",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "{{msg.topic}} MIN @ {{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24b2b9ee679d1dab",
+        "type": "function",
+        "z": "35aed2f02f81b42e",
+        "name": "RESET",
+        "func": "msg.reset = \"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 100,
+        "wires": [
+            [
+                "cffedf3229ca6aaf",
+                "fad67dcbe2dc962d",
+                "7c0c195978cda218",
+                "efb6bdc55928ac3b"
+            ]
+        ]
+    }
+]
