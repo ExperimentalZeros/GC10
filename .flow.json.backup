@@ -525,8 +525,8 @@
                 "type": "str"
             },
             {
-                "label": "?",
-                "value": "?",
+                "label": "OTHER",
+                "value": "OTHER",
                 "type": "str"
             }
         ],
